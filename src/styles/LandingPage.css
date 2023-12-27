@@ -88,32 +88,36 @@
   transition: 1s ease-in-out;
 }
 .carousel-point-active {
-  background-color: brown;
-  color: brown;
+  background-color: black;
   font-weight: bolder;
 }
 
 #carousel-point {
   width: 10px;
   height: 10px;
+  cursor: pointer;
 }
 
-.previous-btn {
+.prev-btn {
   background: url("../asset/MyntraWebSprite_27_01_2021.png");
-  background-position-x: -758px;
-  background-position-y: -71px;
+  background-position-x: -1144px;
+  background-position-y: -104px;
+  background-size: 284rem;
   border-radius: 18rem;
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  cursor: pointer;
+  transform: rotate(180deg);
+  width: 5rem;
 }
 .next-btn {
   background: url("../asset/MyntraWebSprite_27_01_2021.png");
-  background-position-x: -758px;
-  background-position-y: -71px;
-  transform: rotate(180deg);
+  background-position-x: -1144px;
+  background-position-y: -104px;
+  background-size: 284rem;
   border-radius: 18rem;
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  cursor: pointer;
+  width: 5rem;
 }
 .icon-container{
   width: 0;

@@ -1,13 +1,14 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import Caraousel from '../components/Caraousel'
+import CarouselTwo from '../components/CarouselTwo'
+
 
 const HomePage = () => {
   
   return (
     <>
        <NavBar></NavBar>
-        <Caraousel></Caraousel>
+        <CarouselTwo></CarouselTwo>
     </>
   )
 }
