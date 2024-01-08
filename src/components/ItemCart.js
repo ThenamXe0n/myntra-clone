@@ -1,10 +1,7 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import CarouselTwo from '../components/CarouselTwo'
+import React, { useEffect, useState } from "react";
+import "../styles/Card.css";
 
-
-
-const HomePage = () => {
+const ItemCart = () => {
   const ProductItems = [
     {
       id: 1,
@@ -273,13 +270,33 @@ const HomePage = () => {
       },
     },
   ];
-  
-  return (
-    <>
-       <NavBar></NavBar>
-        <CarouselTwo></CarouselTwo>
-    </>
-  )
-}
 
-export default HomePage
+  return (
+    <div className="grid grid-cols-5 justify-items-center">
+    {ProductItems.map((item) => (
+        <div className="card-base">
+          <div className="flex cursor-pointer">
+            <img src={item.image} alt={item.title} className="h-[266px] w-full"/>
+          </div>
+          <div >
+          <div className="mt-2 px-1">
+            <h5 className="text-lg font-semibold">{item.title}</h5>
+            <p className="text-sm font-thin text-gray-500">
+              Round Neck Lounge Tshirts
+            </p>
+          </div>
+          <div className="flex items-center gap-2 card-discription">
+            <h5 className="text-md font-semibold">Rs. 198</h5>
+
+            <p className="text-sm line-through">Rs.199</p>
+
+            <p className="text-red-600 font-thin">(Rs. 1 OFF)</p>
+          </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default ItemCart;

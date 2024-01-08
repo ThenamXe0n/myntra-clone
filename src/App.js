@@ -3,7 +3,12 @@ import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Products from "./components/Products";
 import HomePage from "./pages/HomePage";
-import CarouselTwo from "./components/CarouselTwo";
+import Playground from "./components/Playground";
+import ItemCart from "./components/ItemCart";
+import TestButton from "./components/TestButton";
+import TestPage from "./pages/TestPage";
+
+const btnNames = ["HTML","CSS","Javascript","nodesJS"]
 
 
 const router = createBrowserRouter([
@@ -13,11 +18,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/tab",
-    element: <CarouselTwo></CarouselTwo>,
+    element: <Tabs buttonNames={btnNames}></Tabs>,
   },
   {
     path: "/product",
     element: <Products></Products>,
+  },
+  {
+    path: "/playground",
+    element: <Playground></Playground>,
+  },
+  {
+    path: "/card",
+    element: <ItemCart />,
+  },
+  {
+    path: "/test",
+    element: <TestPage></TestPage>,
   },
 ]);
 

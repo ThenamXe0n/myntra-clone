@@ -68,7 +68,6 @@ const CarouselTwo = () => {
         <div className="flex justify-between items-center absolute w-screen px-11">
           <div className="next-btn" onClick={() => handleprev()}></div>
           <div className="prev-btn" onClick={() => handleNext()}>
-            next
           </div>
         </div>
       </div>

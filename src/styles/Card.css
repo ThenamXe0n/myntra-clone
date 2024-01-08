@@ -1,0 +1,12 @@
+.card-base{
+    width: 210px;
+    background-color: antiquewhite;
+    margin: 5px;
+}
+.card-discription > p{
+    font-size: 12px;
+}
+.card-discription{
+    margin-top: 10px;
+    padding: 0px 3px
+}
